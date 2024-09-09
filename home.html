@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">GreyMatter</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#singupModal">Signup
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Singup Modal -->
+<div class="modal fade" id="singupModal" tabindex="-1" aria-labelledby="singupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="singupModalLabel">Create Account</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+          <label for="exampleInputName" class="form-label">Name</label>
+          <input type="password" class="form-control" id="exampleInputName">
+        </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="cexampleInputEmail1" aria-describedby="emailHelp">
+            <div id="cemailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"> Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="cexampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="cs.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Grey Matter</h5>
+        <p>Create a Safer World,</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="rem.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Technology</h5>
+        <p>Empowering Women and vulnerable individuals through cutting-edge Technology that enhances personal safety</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Picsart.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Enpowering Women</h5>
+        <p>Create a safer world, we offer innovative solutions that provide instant emergency response and help users feel secure wherever they are. </p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+      <div class="container marketing my-4" >
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row featurette d-flex justify-content-center align-items">
+          <div class="col-lg-4"> 
+            <h2 class="fw-normal">Empowering Safety</h2>
+            <p>Harnessing AI and Machine Learning to keep you safe, anytime, anywhere</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <h2 class="fw-normal">Instant Alerts, Proactive Defense</h2>
+            <p>Stay one step ahead with real-time detection and automatic emergency responses.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <h2 class="fw-normal">Your Safety, Our Priority</h2>
+            <p>Innovative technology designed to safeguard your every step with precision and care.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    
+    
+        <!-- START THE FEATURETTES -->
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Real-Time Threat Detection <span class="text-body-secondary"></span></h2>
+            <p class="lead">Imagine how our advanced AI instantly identifies potential threats in your surroundings, keeping you alert and informed at all times.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="ji.jpg" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)" data-dm-inline-fill="" style="--dm-inline-fill: var(--dm-bg--bs-secondary-bg);"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em" data-dm-inline-fill="" style="--dm-inline-fill: var(--dm-text--bs-secondary-color);">500x500</text></svg>
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Automated Emergency Response <span class="text-body-secondary"></span></h2>
+            <p class="lead">icture a system that immediately connects you with authorities and trusted contacts, ensuring help is on the way without any delay.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="alert.jpg" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)" data-dm-inline-fill="" style="--dm-inline-fill: var(--dm-bg--bs-secondary-bg);"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em" data-dm-inline-fill="" style="--dm-inline-fill: var(--dm-text--bs-secondary-color);">500x500</text></svg>
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">GPS Tracking for Instant Location Sharing <span class="text-body-secondary"></span></h2>
+            <p class="lead">Visualize seamless GPS tracking that shares your exact location in real-time, offering peace of mind for you and your loved ones in any situation.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="gps.jpg" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)" data-dm-inline-fill="" style="--dm-inline-fill: var(--dm-bg--bs-secondary-bg);"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em" data-dm-inline-fill="" style="--dm-inline-fill: var(--dm-text--bs-secondary-color);">500x500</text></svg>
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <!-- /END THE FEATURETTES -->
+    
+      </div>
+      <div style= "width:1000px; margin: auto;">
+      <iframe width="1000px" height="500px" src="https://www.youtube.com/embed/VZQ5PmfY7Gs?si=ubvB_7U02nkhdzqx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2024–2025 GreyMatter. Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
